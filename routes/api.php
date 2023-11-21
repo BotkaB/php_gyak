@@ -20,6 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('feladats', [FeladatController::class,'index']);
 Route::get('feladats/{id}', [FeladatController::class,'show']);
 Route::post('feladats', [FeladatController::class,'store']);
-Route::put('feladats/{id}', [AirlineController::class, 'update']);
-Route::delete('feladats/{id}', [FeladatController::class,'destroye']);
+Route::put('feladats/{id}', [FeladatController::class, 'update']);
+Route::delete('feladats/{id}', [FeladatController::class,'destroy']);
 

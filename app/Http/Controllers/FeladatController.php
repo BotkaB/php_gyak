@@ -22,6 +22,7 @@ class FeladatController extends Controller
         $feladat->leírás = $request->leírás;
         $feladat->kezdete = $request->kezdete;
         $feladat->vége = $request->vége;
+        $feladat->user_id = $request->user_id;
         $feladat->save();
     }
 
