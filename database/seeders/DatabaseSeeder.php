@@ -17,10 +17,24 @@ class DatabaseSeeder extends Seeder
 
         // \App\Models\Feladat::factory(30)->create();
 
-        
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+
+       /* \App\Models\User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            
+           
+        ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Test User2',
+            'email' => 'test2@example.com',
+            
+           
+        ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Test User3',
+            'email' => 'test3@example.com',
+            
+           
+        ]);*/
     }
 }
