@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +17,13 @@ class FeladatFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+           
+                
+                'leírás' => fake('hu_HU')->realtext(),
+                'kezdete' => fake()->dateTime(),
+                'vége' => fake()->dateTime(),
+                'user_id' => User::all()->random()->id,
+          
         ];
     }
 }
