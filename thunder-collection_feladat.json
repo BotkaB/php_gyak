@@ -1,0 +1,116 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "feladat",
+    "dateExported": "2023-11-21T20:15:41.857Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b9da21c9-29c5-43d9-89da-71f9cf87e123",
+            "colId": "97bb0343-5fea-4b67-98d5-7dbd194cc854",
+            "containerId": "",
+            "name": "get feladat",
+            "url": "http://localhost:8000/api/feladats",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-21T15:51:15.817Z",
+            "modified": "2023-11-21T16:21:31.568Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d44e9fee-31c6-48a9-9989-c149771baadb",
+            "colId": "97bb0343-5fea-4b67-98d5-7dbd194cc854",
+            "containerId": "",
+            "name": "get feladat mutatás id alapján",
+            "url": "http://localhost:8000/api/feladats/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-21T19:20:47.162Z",
+            "modified": "2023-11-21T19:21:05.716Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "46b3bb8f-c946-41fc-b6e3-19e263579fe1",
+            "colId": "97bb0343-5fea-4b67-98d5-7dbd194cc854",
+            "containerId": "",
+            "name": "post",
+            "url": "http://localhost:8000/api/feladats?leírás=sb chjxl ckgalbdcrg&kezdete=2022-10-25&vége=2023-11-30&user_id=3",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-21T19:24:53.929Z",
+            "modified": "2023-11-21T20:13:09.881Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "leírás",
+                    "value": "sb chjxl ckgalbdcrg",
+                    "isPath": false
+                },
+                {
+                    "name": "kezdete",
+                    "value": "2022-10-25",
+                    "isPath": false
+                },
+                {
+                    "name": "vége",
+                    "value": "2023-11-30",
+                    "isPath": false
+                },
+                {
+                    "name": "user_id",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "76140d6a-13d8-434d-b088-2f9c2afa74f9",
+            "colId": "97bb0343-5fea-4b67-98d5-7dbd194cc854",
+            "containerId": "",
+            "name": "put",
+            "url": "http://localhost:8000/api/feladats/1?leírás=módosított leírás&kezdete=2022-10-23&vége=2022-12-08",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-11-21T19:51:25.305Z",
+            "modified": "2023-11-21T19:55:09.289Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "leírás",
+                    "value": "módosított leírás",
+                    "isPath": false
+                },
+                {
+                    "name": "kezdete",
+                    "value": "2022-10-23",
+                    "isPath": false
+                },
+                {
+                    "name": "vége",
+                    "value": "2022-12-08",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7bd68750-f820-4e57-b2fd-b8e5359218e8",
+            "colId": "97bb0343-5fea-4b67-98d5-7dbd194cc854",
+            "containerId": "",
+            "name": "destroy",
+            "url": "http://localhost:8000/api/feladats/3",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-11-21T20:02:44.097Z",
+            "modified": "2023-11-21T20:08:12.123Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
