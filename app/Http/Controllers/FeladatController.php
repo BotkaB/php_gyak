@@ -19,16 +19,17 @@ class FeladatController extends Controller
 
     public function store(Request $request){
         $feladat = new Feladat();
-        $feladat->name = $request->name;
-        $feladat->country = $request->country;
+        $feladat->leírás = $request->leírás;
+        $feladat->kezdete = $request->kezdete;
+        $feladat->vége = $request->vége;
         $feladat->save();
     }
 
     public function update(Request $request, $id){
         $feladat = Feladat::find($id);
-        $feladat->name = $request->name;
-        $feladat->country = $request->country;
-      
+        $feladat->leírás = $request->leírás;
+        $feladat->kezdete = $request->kezdete;
+        $feladat->vége = $request->vége;
         $feladat->save();
     }
 

@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+
+Route::get('feladat', [FeladatController::class,'index']);
+Route::get('feladat/{id}', [FeladatController::class,'show']);
+Route::post('feladat', [FeladatController::class,'store']);
+Route::put('feladat/{id}', [FeladatController::class,'update']);
 });
