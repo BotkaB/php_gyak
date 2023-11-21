@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FeladatController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-
-Route::get('feladat', [FeladatController::class,'index']);
-Route::get('feladat/{id}', [FeladatController::class,'show']);
-Route::post('feladat', [FeladatController::class,'store']);
-Route::delete('feladat/{id}', [FeladatController::class,'destroye']);
 });
+Route::get('feladats', [FeladatController::class,'index']);
+Route::get('feladats/{id}', [FeladatController::class,'show']);
+Route::post('feladats', [FeladatController::class,'store']);
+Route::delete('feladats/{id}', [FeladatController::class,'destroye']);
+
